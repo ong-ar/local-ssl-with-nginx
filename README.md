@@ -2,6 +2,14 @@
 
 **설정된 모든 도메인은 `3000`번 포트로 향해있습니다.**
 
+### 0. clone
+
+```bash
+git clone https://github.com/ong-ar/local-ssl-with-nginx.git
+
+cd local-ssl-with-nginx
+```
+
 ### 1. mkcert 설치 및 인증서 생성
 
 mkcert is a simple tool for making locally-trusted development certificates.
@@ -25,6 +33,12 @@ $ docker-compose up -d
 ```bash
 $ echo '127.0.0.1   merlin.local.cashnote.kr kestrel.local.cashnote.kr space.local.kcd.co.kr' | sudo tee -a /etc/hosts
 ```
+
+### 4. chrome 에서 확인
+
+- `merlin.local.cashnote.kr`
+- `kestrel.local.cashnote.kr`
+- `space.local.kcd.co.kr`
 
 # 설정 방법
 
