@@ -10,6 +10,14 @@ git clone https://github.com/ong-ar/local-ssl-with-nginx.git
 cd local-ssl-with-nginx
 ```
 
+### (1~3단계 쉘스크립트) install.sh 실행
+
+---
+
+### or
+
+---
+
 ### 1. mkcert 설치 및 인증서 생성
 
 mkcert is a simple tool for making locally-trusted development certificates.
