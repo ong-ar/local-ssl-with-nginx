@@ -87,6 +87,8 @@ $ sudo vi /etc/hosts
 
 ```bash
 $ mkcert -cert-file=./ssl/all.crt -key-file ./ssl/all.key "*.local.kcd.co.kr" "*.local.cashnote.kr" "*.example.com"
+
+$ docker-compose restart
 ```
 
 ```bash
@@ -95,23 +97,6 @@ $ sudo vi /etc/hosts
 
 ```
 127.0.0.1 a.example.com
-```
-
-`nginx/conf.d/example.com.conf` 생성 후
-
-```
-server {
-    listen 443 ssl;
-    server_name *.example.com;
-
-    location / {
-        proxy_pass http://host.docker.internal:3000;
-    }
-}
-```
-
-```bash
-$ docker-compose restart
 ```
 
 ## 삭제 방법
